@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckOrdering", "DeckOrdering\DeckOrdering.csproj", "{B64BA73D-1F74-4A22-8EF7-786AC57F5CA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B64BA73D-1F74-4A22-8EF7-786AC57F5CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64BA73D-1F74-4A22-8EF7-786AC57F5CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64BA73D-1F74-4A22-8EF7-786AC57F5CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64BA73D-1F74-4A22-8EF7-786AC57F5CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0572CE17-0317-41B5-831F-D96AB5937674}
+	EndGlobalSection
+EndGlobal

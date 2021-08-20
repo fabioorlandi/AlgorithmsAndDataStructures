@@ -1,0 +1,13 @@
+C:\Users\fabio\OneDrive\Área de Trabalho\Algoritmos e Estruturas de Dados\OperacaoVetores\OperacaoVetores\bin\Debug\netcoreapp3.1\OperacaoVetores.exe
+C:\Users\fabio\OneDrive\Área de Trabalho\Algoritmos e Estruturas de Dados\OperacaoVetores\OperacaoVetores\bin\Debug\netcoreapp3.1\OperacaoVetores.deps.json
+C:\Users\fabio\OneDrive\Área de Trabalho\Algoritmos e Estruturas de Dados\OperacaoVetores\OperacaoVetores\bin\Debug\netcoreapp3.1\OperacaoVetores.runtimeconfig.json
+C:\Users\fabio\OneDrive\Área de Trabalho\Algoritmos e Estruturas de Dados\OperacaoVetores\OperacaoVetores\bin\Debug\netcoreapp3.1\OperacaoVetores.runtimeconfig.dev.json
+C:\Users\fabio\OneDrive\Área de Trabalho\Algoritmos e Estruturas de Dados\OperacaoVetores\OperacaoVetores\bin\Debug\netcoreapp3.1\OperacaoVetores.dll
+C:\Users\fabio\OneDrive\Área de Trabalho\Algoritmos e Estruturas de Dados\OperacaoVetores\OperacaoVetores\bin\Debug\netcoreapp3.1\OperacaoVetores.pdb
+C:\Users\fabio\OneDrive\Área de Trabalho\Algoritmos e Estruturas de Dados\OperacaoVetores\OperacaoVetores\obj\Debug\netcoreapp3.1\OperacaoVetores.csprojAssemblyReference.cache
+C:\Users\fabio\OneDrive\Área de Trabalho\Algoritmos e Estruturas de Dados\OperacaoVetores\OperacaoVetores\obj\Debug\netcoreapp3.1\OperacaoVetores.AssemblyInfoInputs.cache
+C:\Users\fabio\OneDrive\Área de Trabalho\Algoritmos e Estruturas de Dados\OperacaoVetores\OperacaoVetores\obj\Debug\netcoreapp3.1\OperacaoVetores.AssemblyInfo.cs
+C:\Users\fabio\OneDrive\Área de Trabalho\Algoritmos e Estruturas de Dados\OperacaoVetores\OperacaoVetores\obj\Debug\netcoreapp3.1\OperacaoVetores.csproj.CoreCompileInputs.cache
+C:\Users\fabio\OneDrive\Área de Trabalho\Algoritmos e Estruturas de Dados\OperacaoVetores\OperacaoVetores\obj\Debug\netcoreapp3.1\OperacaoVetores.dll
+C:\Users\fabio\OneDrive\Área de Trabalho\Algoritmos e Estruturas de Dados\OperacaoVetores\OperacaoVetores\obj\Debug\netcoreapp3.1\OperacaoVetores.pdb
+C:\Users\fabio\OneDrive\Área de Trabalho\Algoritmos e Estruturas de Dados\OperacaoVetores\OperacaoVetores\obj\Debug\netcoreapp3.1\OperacaoVetores.genruntimeconfig.cache

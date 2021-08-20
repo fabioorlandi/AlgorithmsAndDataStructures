@@ -1,0 +1,13 @@
+C:\Users\fabio\OneDrive\Área de Trabalho\Algorithms and Data Structures\DeckOrdering\DeckOrdering\bin\Debug\netcoreapp3.1\DeckOrdering.exe
+C:\Users\fabio\OneDrive\Área de Trabalho\Algorithms and Data Structures\DeckOrdering\DeckOrdering\bin\Debug\netcoreapp3.1\DeckOrdering.deps.json
+C:\Users\fabio\OneDrive\Área de Trabalho\Algorithms and Data Structures\DeckOrdering\DeckOrdering\bin\Debug\netcoreapp3.1\DeckOrdering.runtimeconfig.json
+C:\Users\fabio\OneDrive\Área de Trabalho\Algorithms and Data Structures\DeckOrdering\DeckOrdering\bin\Debug\netcoreapp3.1\DeckOrdering.runtimeconfig.dev.json
+C:\Users\fabio\OneDrive\Área de Trabalho\Algorithms and Data Structures\DeckOrdering\DeckOrdering\bin\Debug\netcoreapp3.1\DeckOrdering.dll
+C:\Users\fabio\OneDrive\Área de Trabalho\Algorithms and Data Structures\DeckOrdering\DeckOrdering\bin\Debug\netcoreapp3.1\DeckOrdering.pdb
+C:\Users\fabio\OneDrive\Área de Trabalho\Algorithms and Data Structures\DeckOrdering\DeckOrdering\obj\Debug\netcoreapp3.1\DeckOrdering.AssemblyInfoInputs.cache
+C:\Users\fabio\OneDrive\Área de Trabalho\Algorithms and Data Structures\DeckOrdering\DeckOrdering\obj\Debug\netcoreapp3.1\DeckOrdering.AssemblyInfo.cs
+C:\Users\fabio\OneDrive\Área de Trabalho\Algorithms and Data Structures\DeckOrdering\DeckOrdering\obj\Debug\netcoreapp3.1\DeckOrdering.csproj.CoreCompileInputs.cache
+C:\Users\fabio\OneDrive\Área de Trabalho\Algorithms and Data Structures\DeckOrdering\DeckOrdering\obj\Debug\netcoreapp3.1\DeckOrdering.dll
+C:\Users\fabio\OneDrive\Área de Trabalho\Algorithms and Data Structures\DeckOrdering\DeckOrdering\obj\Debug\netcoreapp3.1\DeckOrdering.pdb
+C:\Users\fabio\OneDrive\Área de Trabalho\Algorithms and Data Structures\DeckOrdering\DeckOrdering\obj\Debug\netcoreapp3.1\DeckOrdering.genruntimeconfig.cache
+C:\Users\fabio\OneDrive\Área de Trabalho\Algorithms and Data Structures\DeckOrdering\DeckOrdering\obj\Debug\netcoreapp3.1\DeckOrdering.csprojAssemblyReference.cache
