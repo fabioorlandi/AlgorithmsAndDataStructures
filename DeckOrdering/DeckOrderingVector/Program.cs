@@ -6,7 +6,7 @@ namespace DeckOrdering
     {
         static void Main(string[] args)
         {
-            Console.Write("--- Feito por: Bruno Orlandy e Fábio Orlandi ---\n\n\n");
+            Console.Write("--- Feito por: Fábio Orlandi ---\n\n\n");
 
             var deck = BuildDeck();
             RunMenu(deck);
