@@ -1,5 +1,0 @@
-C:\Users\fabio\OneDrive\Área de Trabalho\DeckOrdering\DeckOrdering.exe
-C:\Users\fabio\OneDrive\Área de Trabalho\DeckOrdering\DeckOrdering.dll
-C:\Users\fabio\OneDrive\Área de Trabalho\DeckOrdering\DeckOrdering.deps.json
-C:\Users\fabio\OneDrive\Área de Trabalho\DeckOrdering\DeckOrdering.runtimeconfig.json
-C:\Users\fabio\OneDrive\Área de Trabalho\DeckOrdering\DeckOrdering.pdb
