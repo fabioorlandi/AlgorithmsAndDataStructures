@@ -59,7 +59,7 @@ namespace DeckOrderingVector
                         break;
                     case ConsoleKey.D3:
                         closeCLI = true;
-                        Console.WriteLine("\n\n");
+                        Console.Clear();
                         Main(new string[] { });
                         break;
                     case ConsoleKey.D4:

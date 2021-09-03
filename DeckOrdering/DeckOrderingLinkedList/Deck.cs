@@ -1,4 +1,5 @@
-﻿using Util;
+﻿using System.Collections.Generic;
+using Util;
 
 namespace DeckOrderingLinkedList
 {
@@ -14,6 +15,18 @@ namespace DeckOrderingLinkedList
         private int _cardsLength;
 
         internal int GetLength() => _cardsLength;
+
+        internal IEnumerable<Card> GetCards()
+        {
+            var currentCard = _head;
+
+            while (currentCard is not null)
+            {
+                yield return currentCard;
+
+                currentCard = currentCard.NextCard;
+            }
+        }
 
         internal void AddCardNeatly(Card newCard)
         {

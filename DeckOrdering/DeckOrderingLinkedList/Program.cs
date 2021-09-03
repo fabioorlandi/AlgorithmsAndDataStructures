@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Util;
 
 namespace DeckOrderingLinkedList
@@ -25,7 +26,6 @@ namespace DeckOrderingLinkedList
                 Console.WriteLine("2. Visualizar lista de cartas");
                 Console.WriteLine("3. Reiniciar");
                 Console.WriteLine("4. Sair");
-                Console.WriteLine("\n");
                 var option = Console.ReadKey().Key;
 
                 switch (option)
@@ -38,7 +38,7 @@ namespace DeckOrderingLinkedList
                         break;
                     case ConsoleKey.D3:
                         closeCLI = true;
-                        Console.WriteLine("\n\n");
+                        Console.Clear();
                         Main(new string[] { });
                         break;
                     case ConsoleKey.D4:
@@ -54,6 +54,7 @@ namespace DeckOrderingLinkedList
         {
             var length = deck.GetLength() + 1;
 
+            Console.WriteLine("\n");
             Console.WriteLine($"Informe o valor da carta nº {length} (1 (AS ou A), 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 (Valete ou Cavalo), 12 (Dama ou Rainha), 13 (Rei))");
             var number = CardExtensions.ConvertToNumber(Console.ReadLine());
 
@@ -62,29 +63,16 @@ namespace DeckOrderingLinkedList
 
         static void ShowDeck(Deck deck)
         {
-            //Card[] cards;
+            Console.WriteLine("\n--- LISTA DE CARTAS ---");
+            Console.WriteLine($"\nExistem {deck.GetLength()} carta(s) na lista!");
 
-            //if (isInverted)
-            //{
-            //    cards = deck.GetInvertedCardsList();
+            var cards = deck.GetCards();
+            for (var i = 1; i <= deck.GetLength(); i++)
+            {
+                var card = cards.ElementAt(i - 1);
 
-            //    Console.WriteLine("\n--- LISTA DE CARTAS INVERTIDA ---");
-            //}
-            //else
-            //{
-            //    cards = deck.GetCardsList();
-
-            //    Console.WriteLine("\n--- LISTA DE CARTAS ---");
-            //}
-
-            //for (var i = 1; i <= cards.Length; i++)
-            //{
-            //    var card = cards[i - 1];
-
-            //    Console.WriteLine($"\nCarta nº {i}");
-            //    Console.WriteLine($"{CardExtensions.ConvertToValue(card.Number)} " +
-            //        $"- {SuitExtensions.ConvertSuit(card.Suit)}");
-            //}
+                Console.WriteLine($"\nA carta nº {i} é: {CardExtensions.ConvertToValue(card.Number)}");
+            }
         }
     }
 }
