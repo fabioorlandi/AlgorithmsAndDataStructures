@@ -1,14 +1,5 @@
-﻿namespace DeckOrdering
+﻿namespace Util
 {
-    public enum eSuit
-    {
-        Undefined,
-        Hearts,
-        Spades,
-        Diamonds,
-        Clubs
-    }
-
     public class SuitExtensions
     {
         public static eSuit ConvertSuit(string suit) =>

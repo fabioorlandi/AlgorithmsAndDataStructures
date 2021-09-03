@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeckOrderingVector", "DeckOrderingVector\DeckOrderingVector.csproj", "{B64BA73D-1F74-4A22-8EF7-786AC57F5CA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckOrderingLinkedList", "DeckOrderingLinkedList\DeckOrderingLinkedList.csproj", "{A9CBD085-3AFF-4972-97F4-B5B82D4F1FB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{CC0ACCA5-A4EC-4E92-8A8D-F2199864B624}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B64BA73D-1F74-4A22-8EF7-786AC57F5CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B64BA73D-1F74-4A22-8EF7-786AC57F5CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B64BA73D-1F74-4A22-8EF7-786AC57F5CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9CBD085-3AFF-4972-97F4-B5B82D4F1FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9CBD085-3AFF-4972-97F4-B5B82D4F1FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9CBD085-3AFF-4972-97F4-B5B82D4F1FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9CBD085-3AFF-4972-97F4-B5B82D4F1FB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC0ACCA5-A4EC-4E92-8A8D-F2199864B624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0ACCA5-A4EC-4E92-8A8D-F2199864B624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0ACCA5-A4EC-4E92-8A8D-F2199864B624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0ACCA5-A4EC-4E92-8A8D-F2199864B624}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

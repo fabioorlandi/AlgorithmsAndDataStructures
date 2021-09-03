@@ -1,10 +1,10 @@
-﻿namespace DeckOrdering
+﻿namespace DeckOrderingVector
 {
-    public class Deck
+    internal class Deck
     {
         private readonly Card[] _cards = new Card[7];
 
-        public void AddCardNeatly(Card newCard)
+        internal void AddCardNeatly(Card newCard)
         {
             if (_cards[0] is null)
                 _cards[0] = newCard;
@@ -23,10 +23,10 @@
             }
         }
 
-        public Card[] GetCardsList() =>
+        internal Card[] GetCardsList() =>
             _cards;
 
-        public Card[] GetInvertedCardsList()
+        internal Card[] GetInvertedCardsList()
         {
             var invertedCardArray = new Card[_cards.Length];
 

@@ -1,6 +1,7 @@
 ﻿using System;
+using Util;
 
-namespace DeckOrdering
+namespace DeckOrderingVector
 {
     class Program
     {
@@ -44,7 +45,7 @@ namespace DeckOrdering
                 Console.WriteLine("O que deseja fazer? (digite o número da opção)");
                 Console.WriteLine("1. Visualizar lista de cartas");
                 Console.WriteLine("2. Visualizar lista de cartas invertida");
-                Console.WriteLine("3. Embaralhar cartas novamente");
+                Console.WriteLine("3. Reiniciar");
                 Console.WriteLine("4. Sair");
                 var option = Console.ReadKey().Key;
 
