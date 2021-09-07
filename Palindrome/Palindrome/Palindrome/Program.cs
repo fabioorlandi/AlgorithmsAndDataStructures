@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Linq;
-using Util;
 
-namespace DeckOrderingLinkedList
+namespace Palindrome
 {
     class Program
     {
@@ -16,14 +14,14 @@ namespace DeckOrderingLinkedList
         static void RunMenu()
         {
             var closeCLI = false;
-            var deck = new Deck();
+            Palindrome palindrome = null;
 
             while (!closeCLI)
             {
-                Console.WriteLine("\n--- MONTAR BARALHO EM LISTA ENCADEADA ---\n");
+                Console.WriteLine("\n--- PALÍNDROMO EM LISTA DUPLAMENTE ENCADEADA ---\n");
                 Console.WriteLine("O que deseja fazer? (digite o número da opção)");
-                Console.WriteLine("1. Inserir carta");
-                Console.WriteLine("2. Visualizar lista de cartas");
+                Console.WriteLine("1. Digitar texto");
+                Console.WriteLine("2. Visualizar resultado");
                 Console.WriteLine("3. Reiniciar");
                 Console.WriteLine("4. Sair");
                 var option = Console.ReadKey();
@@ -31,10 +29,11 @@ namespace DeckOrderingLinkedList
                 switch (option.Key)
                 {
                     case ConsoleKey.D1:
-                        InsertCard(deck);
+                        palindrome = new Palindrome();
+                        ReadText(palindrome);
                         break;
                     case ConsoleKey.D2:
-                        ShowDeck(deck);
+                        ShowResult(palindrome);
                         break;
                     case ConsoleKey.D3:
                         closeCLI = true;
@@ -50,29 +49,34 @@ namespace DeckOrderingLinkedList
             }
         }
 
-        static void InsertCard(Deck deck)
+        static void ReadText(Palindrome palindrome)
         {
-            var length = deck.GetLength() + 1;
-
             Console.WriteLine("\n");
-            Console.WriteLine($"Informe o valor da carta nº {length} (1 (AS ou A), 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 (Valete ou Cavalo), 12 (Dama ou Rainha), 13 (Rei))");
-            var number = CardExtensions.ConvertToNumber(Console.ReadLine());
+            Console.WriteLine($"Digite o texto (pode conter letras, números e caracteres especiais)");
+            var text = Console.ReadLine();
 
-            deck.AddCardNeatly(new Card(number));
+            palindrome.Build(text);
         }
 
-        static void ShowDeck(Deck deck)
+        static void ShowResult(Palindrome palindrome)
         {
-            Console.WriteLine("\n--- LISTA DE CARTAS ---");
-            Console.WriteLine($"\nExistem {deck.GetLength()} carta(s) na lista!");
-
-            var cards = deck.GetCards();
-            for (var i = 1; i <= deck.GetLength(); i++)
+            if (palindrome is null)
             {
-                var card = cards.ElementAt(i - 1);
+                Console.WriteLine("\nTexto não informado!");
 
-                Console.WriteLine($"\nA carta nº {i} é: {CardExtensions.ConvertToValue(card.Number)}");
+                return;
             }
+
+            //Console.WriteLine("\n--- LISTA DE CARTAS ---");
+            //Console.WriteLine($"\nExistem {deck.GetLength()} carta(s) na lista!");
+
+            //var cards = deck.GetCards();
+            //for (var i = 1; i <= deck.GetLength(); i++)
+            //{
+            //    var card = cards.ElementAt(i - 1);
+
+            //    Console.WriteLine($"\nA carta nº {i} é: {CardExtensions.ConvertToValue(card.Number)}");
+            //}
         }
     }
 }

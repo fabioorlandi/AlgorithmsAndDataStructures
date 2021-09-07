@@ -47,9 +47,9 @@ namespace DeckOrderingVector
                 Console.WriteLine("2. Visualizar lista de cartas invertida");
                 Console.WriteLine("3. Reiniciar");
                 Console.WriteLine("4. Sair");
-                var option = Console.ReadKey().Key;
+                var option = Console.ReadKey();
 
-                switch (option)
+                switch (option.Key)
                 {
                     case ConsoleKey.D1:
                         ShowDeck(deck, false);
