@@ -20,7 +20,6 @@
 
             Character previousChar = null;
             Character currentChar = _head;
-            Character nextChar = null;
 
             for (var i = 0; i <= text.Length - 1; i++)
             {
@@ -28,16 +27,39 @@
 
                 if (i + 1 < text.Length)
                 {
-                    var auxChar = new Character(text[i + 1]);
-                    currentChar.NextChar = auxChar;
-                    nextChar = currentChar.NextChar;
+                    currentChar.NextChar = new Character(text[i + 1]);
 
                     previousChar = currentChar;
-                    currentChar = nextChar;
+                    currentChar = currentChar.NextChar;
                 }
 
                 _textLength++;
             }
+
+            currentChar.NextChar = _head;
+            _head.PreviousChar = currentChar;
+        }
+
+        internal bool IsValidPalindrome()
+        {
+            var forwardChar = _head;
+            var backwardChar = _head.PreviousChar;
+            var isPalindrome = true;
+
+            for (var i = 0; i < _textLength / 2; i++)
+            {
+                if (!forwardChar.Value.Equals(backwardChar.Value))
+                {
+                    isPalindrome = false;
+
+                    break;
+                }
+
+                forwardChar = forwardChar.NextChar;
+                backwardChar = backwardChar.PreviousChar;
+            }
+
+            return isPalindrome;
         }
     }
 }

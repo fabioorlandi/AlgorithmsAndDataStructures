@@ -67,8 +67,12 @@ namespace Palindrome
                 return;
             }
 
-            //Console.WriteLine("\n--- LISTA DE CARTAS ---");
-            //Console.WriteLine($"\nExistem {deck.GetLength()} carta(s) na lista!");
+            if (palindrome.IsValidPalindrome())
+                Console.WriteLine("\nO texto informado É um palíndromo!");
+            else
+                Console.WriteLine("\nO texto informado NÃO É um palíndromo!");
+
+            Console.WriteLine("\n--- TEXTO ---");
 
             //var cards = deck.GetCards();
             //for (var i = 1; i <= deck.GetLength(); i++)
