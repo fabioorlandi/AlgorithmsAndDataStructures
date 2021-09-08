@@ -61,21 +61,21 @@ namespace Palindrome
 
         static void ShowResult(Palindrome palindrome)
         {
-            if (palindrome is null)
+            if (palindrome?.GetLength() == 0)
             {
-                Console.WriteLine("\nTexto não informado!");
+                Console.WriteLine("\n\nTexto não informado!");
 
                 return;
             }
 
             if (palindrome.IsValidPalindrome())
-                Console.WriteLine("\nO texto informado É um palíndromo!");
+                Console.WriteLine("\n\nO texto informado É um palíndromo!");
             else
-                Console.WriteLine("\nO texto informado NÃO É um palíndromo!");
+                Console.WriteLine("\n\nO texto informado NÃO É um palíndromo!");
 
             var text = palindrome.GetText();
 
-            Console.WriteLine("\n--- TEXTO ---");
+            Console.WriteLine("\n\n--- TEXTO ---");
             for (var i = 1; i <= palindrome.GetLength(); i++)
             {
                 var character = text.ElementAt(i - 1).ForwardChar;
@@ -83,7 +83,7 @@ namespace Palindrome
                 Console.Write($"{character}");
             }
 
-            Console.WriteLine("\n--- TEXTO INVERTIDO ---");
+            Console.WriteLine("\n\n--- TEXTO INVERTIDO ---");
             for (var i = 1; i <= palindrome.GetLength(); i++)
             {
                 var character = text.ElementAt(i - 1).BackwardChar;

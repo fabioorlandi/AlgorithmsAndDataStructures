@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Util;
 
 namespace Palindrome
 {
@@ -32,6 +33,8 @@ namespace Palindrome
 
         internal void Build(string text)
         {
+            text = text.RemoveDiacritics();
+
             if (string.IsNullOrWhiteSpace(text))
                 return;
 
