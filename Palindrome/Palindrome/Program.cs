@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Palindrome
 {
@@ -18,7 +19,7 @@ namespace Palindrome
 
             while (!closeCLI)
             {
-                Console.WriteLine("\n--- PALÍNDROMO EM LISTA DUPLAMENTE ENCADEADA ---\n");
+                Console.WriteLine("\n\n--- PALÍNDROMO EM LISTA DUPLAMENTE ENCADEADA ---\n");
                 Console.WriteLine("O que deseja fazer? (digite o número da opção)");
                 Console.WriteLine("1. Digitar texto");
                 Console.WriteLine("2. Visualizar resultado");
@@ -72,15 +73,23 @@ namespace Palindrome
             else
                 Console.WriteLine("\nO texto informado NÃO É um palíndromo!");
 
+            var text = palindrome.GetText();
+
             Console.WriteLine("\n--- TEXTO ---");
+            for (var i = 1; i <= palindrome.GetLength(); i++)
+            {
+                var character = text.ElementAt(i - 1).ForwardChar;
 
-            //var cards = deck.GetCards();
-            //for (var i = 1; i <= deck.GetLength(); i++)
-            //{
-            //    var card = cards.ElementAt(i - 1);
+                Console.Write($"{character}");
+            }
 
-            //    Console.WriteLine($"\nA carta nº {i} é: {CardExtensions.ConvertToValue(card.Number)}");
-            //}
+            Console.WriteLine("\n--- TEXTO INVERTIDO ---");
+            for (var i = 1; i <= palindrome.GetLength(); i++)
+            {
+                var character = text.ElementAt(i - 1).BackwardChar;
+
+                Console.Write($"{character}");
+            }
         }
     }
 }

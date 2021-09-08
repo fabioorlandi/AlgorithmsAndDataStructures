@@ -14,5 +14,7 @@
         internal Character PreviousChar { get; set; }
 
         internal Character NextChar { get; set; }
+
+        public override string ToString() => this.Value.ToString();
     }
 }
