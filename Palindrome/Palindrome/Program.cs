@@ -61,7 +61,7 @@ namespace Palindrome
 
         static void ShowResult(Palindrome palindrome)
         {
-            if (palindrome?.GetLength() == 0)
+            if (palindrome is null || palindrome.GetLength() == 0)
             {
                 Console.WriteLine("\n\nTexto não informado!");
 
